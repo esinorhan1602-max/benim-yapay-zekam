@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ İlham - Yapay Zeka Asistanı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">✨</div>
+            <h1>İLHAM</h1>
+            <p>Her sorunun cevabı burada</p>
+            <button class="clear-btn" onclick="gecmisiTemizle()" title="Sohbeti temizle">🗑️</button>
+        </header>
+
+        <main class="chat-area" id="chatArea">
+            <div class="message bot">
+                Merhaba! 👋 Ben <b>İlham</b>.<br><br>
+                🍳 Yemek tarifi<br>
+                🔧 Tamir & bakım<br>
+                📚 Kitap önerisi<br>
+                🎓 Ders yardımı<br>
+                💡 Günlük motivasyon<br><br>
+                Ne sormak istersin?
+            </div>
+        </main>
+
+        <div class="categories">
+            <button onclick="quickAsk('Bana kolay bir yemek tarifi ver')">🍳 Yemek</button>
+            <button onclick="quickAsk('Evde tamir için ipucu ver')">🔧 Tamir</button>
+            <button onclick="quickAsk('Bana bir kitap öner')">📚 Kitap</button>
+            <button onclick="quickAsk('Bugün için motivasyon ver')">💡 İlham</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Bir şey sor..." autocomplete="off">
+            <button id="sendBtn" onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
